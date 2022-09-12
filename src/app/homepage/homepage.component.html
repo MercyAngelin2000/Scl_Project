@@ -1,0 +1,29 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+      <div>
+      <img style="margin-top: 3px;" src="../assets/media/home.png"
+                              alt="login image" width="100" height="100"></div>
+                       
+   <button mat-icon-button>
+    <mat-icon (click)="drawer.toggle()" style="color: white">menu</mat-icon>
+  </button> </mat-toolbar-row>
+  </mat-toolbar>
+  
+   <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened="True">
+      <mat-nav-list>
+        <a mat-list-item href="home/userprofile" style="color: white;">User Profile</a>
+        <a mat-list-item href="home/sclprofile" style="color: white;">School Profile</a>
+        <button mat-list-item (click)="logout()" style="color: white;">Logout</button>
+      </mat-nav-list>
+    </mat-drawer>
+  
+     <div class="example-sidenav-content"> 
+      <router-outlet></router-outlet>
+    </div> 
+  
+  </mat-drawer-container>
+  
+  
+  
+    

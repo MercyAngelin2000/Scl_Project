@@ -1,0 +1,53 @@
+<br><br><br><br>
+<div class="container">
+    <table style="background-color: rgb(152, 224, 252);margin-left: 240px;">
+        <div class="row">
+            <tr>
+                <td>
+                    <div class="col" style="margin-bottom: 49px; "><br>
+                        <img style="margin-top: 30px;margin-left: 30px;" src="../assets/media/login1.png"
+                            alt="login image" width="300" height="300">
+                    </div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <form name="login" [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+
+                        <div class="col"><br>
+                            <img src="../assets/media/login2.png" alt="login image" width="270" height="120">
+                        </div>
+                        <!-- <p>Username:</p> -->
+                        <input type="text" id="username" placeholder="Enter Username" class="form-control"
+                            formControlName="email">
+                        <div
+                            *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched) && loginForm.get('email')?.errors?.required">
+                            Username is required
+                        </div>
+                        <br>
+                        <input type="text" id="password" placeholder="Enter Password" class="form-control"
+                            formControlName="pwd">
+                        <div
+                            *ngIf="loginForm.get('pwd')?.invalid && (loginForm.get('pwd')?.dirty || loginForm.get('pwd')?.touched) && loginForm.get('pwd')?.errors?.required">
+                            Password is required</div>
+
+
+                        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="submit" class="btn btn-success"
+                            [disabled]="!loginForm.valid">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="/register" target="_self"><button type="button"
+                                class="btn btn-success">Register</button></a>
+
+
+
+                    </form>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+        </div>
+
+
+
+
+
+    </table>
+</div>
