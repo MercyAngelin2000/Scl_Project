@@ -15,6 +15,7 @@ const routes: Routes = [
         {path:'userprofile',component:UserProfileComponent},
         {path:'sclprofile',component:GeneralInfoComponent},
       ]},
+  
 ];
 
 @NgModule({
