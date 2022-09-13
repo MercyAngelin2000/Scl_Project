@@ -9,7 +9,7 @@ export class MainserviceService {
   token: any;
 
   constructor(private http:HttpClient) { }
-  base ="http://127.0.0.1:8000"
+  base ="https://sclpropython.herokuapp.com"
 
   login(data:any,url:any){
     return this.http.post(this.base+url,data); 
