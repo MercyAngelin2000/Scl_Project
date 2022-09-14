@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { SubserviceService } from '../subservice.service';
@@ -11,19 +11,21 @@ import { SubserviceService } from '../subservice.service';
 })
 export class LoginpageComponent implements OnInit {
   loginForm: FormGroup | any;
-  
+  public showPassword!: boolean 
+  public showPasswordOnPress!: boolean;
   data: any;
   id: any;
   credential! : FormData ;
-  constructor(private router:Router,private subService:SubserviceService) { 
-    this.loginForm = new FormGroup({
-      email: new FormControl('', [Validators.required]),
-      pwd: new FormControl('', [Validators.required])
-    });
-    
+  constructor(private router:Router,private subService:SubserviceService,private fb:FormBuilder) { 
+  
   }
 
   ngOnInit(): void {
+    this.loginForm =this.fb.group({
+      email:['',Validators.required],
+      pwd:['',Validators.required]
+
+    })
   }
 
   onSubmit(){

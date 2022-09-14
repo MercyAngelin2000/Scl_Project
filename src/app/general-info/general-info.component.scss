@@ -3,6 +3,7 @@ i{
 }
 label{
     color: black;
+    font-size:medium;
 }
 h6{
     color: black;
@@ -17,4 +18,10 @@ h5{
 }
 th{
     font-size: 15px; text-align: center; 
+}
+.card{
+    height: fit-content;
+    width: fit-content;
+    font-family: "Times New Roman", Times, serif;
+    font-size: smaller;
 }

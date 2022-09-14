@@ -1,0 +1,25 @@
+.row{
+    border: 2px solid rgba(238, 234, 234, 0.971);
+}
+.col{
+    border: 2px solid rgba(238, 234, 234, 0.971);
+   width: fit-content;
+}
+.hide {
+    display: none;
+  }
+  .inner-addon .far,
+  .inner-addon .fas {
+    position: absolute;
+    padding: 10px 15px;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .right-addon .far,
+  .right-addon .fas {
+    right: 0px;
+  }
+  i{
+    background-color: white;
+  }
+  

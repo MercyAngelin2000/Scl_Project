@@ -1,7 +1,7 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="card position-absolute top-50 translate-middle start-50">
 
-<div class="card" style="margin-top: 40px; margin-left:40px">
-
-    <div class="card-header" style="background-color: darkblue;">
+    <div class="card-header" style="background-color: darkblue; height:14%">
         <h2 class="text-center text-white">User Profile</h2>
     </div>
     <div class="card-body" style="margin-top:30px ; color: black; font-size: large;">
@@ -70,7 +70,7 @@
     </div>
     <div class="card-footer">
 
-        <div class="div" style="margin-left: 320px; margin-top: 10px; margin-bottom: 15px;">
+        <div class="col-md-12 text-center">
             <button type="submit" class="btn btn-success" [disabled]="!userprofile.valid" (click)="onSubmit()">Update</button>
             <button type="button" (click)="onDelete()" class="btn btn-danger" style="  margin-left: 30px;">Delete my
                 profile</button>

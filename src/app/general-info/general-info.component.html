@@ -1,8 +1,9 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="container" style="margin-top:30px;">
-    <div class="card" style="width: 1300px;">
+    <div class="card">
         <div class="card-header" style="background-color: darkblue; color: aliceblue;">
-            <div>
-                <h2><span>{{steps}}</span> {{msg}}</h2>
+            <div >
+                <h3><span>{{steps}}</span> {{msg}}</h3>
             </div>
         </div>
         <div class="card-body" style="font-size: 18px;">
@@ -5293,7 +5294,7 @@
 
             </form>
         </div>
-        <div class="card-footer" style="margin-top:30px; margin-bottom: 30px;">
+        <div class="card-footer" >
             <button type="" (click)="onPrevious()" class="btn btn-warning" *ngIf="steps!=1"
                 style="margin-right: 20px;">Privious</button>
             <button type="" (click)="onNext()" class="btn btn-primary" style="margin-right: 20px;"

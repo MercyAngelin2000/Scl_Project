@@ -1,139 +1,135 @@
-<div class="container ">
-    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" novalidate>
-        <table style="background-color: rgb(152, 224, 252);margin-left: 200px;">
-            <tr> </tr>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col" style="margin-top: 20px; ">
-                    <h3> Register Page</h3><br>
-                </div>
-                <div class="col"></div>
-            </div>
-            <div class="row">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container position-absolute top-50 translate-middle start-50"
+    style="background-color: rgb(253, 227, 195);width: fit-content;">
+   <div class="row" style="align-items:center">
+        <div style="text-align:center">
+            <h1 style="font-size: solid large;">Register Page</h1>
+        </div>
+        <div class="col" >
+            <img src="../assets/media/login1.png" alt="login image" >
+        </div>
+        <div class="col">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" novalidate>
+                <div class="row">
 
-                <div class="col" style="margin-left: 49px; ">
-                    <img src="../assets/media/login1.png" alt="login image" width="300" height="400">
-                </div>
-                <div class="col" style="margin-right: 49px; margin-bottom: 70px;">
-                    <table>
-                        <tr>
-                            <td>First Name:</td>
-                            <td>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" id="fname" placeholder="Enter First Name"
-                                            class="form-control" formControlName="firstname" style="width: 150px;">
-                                    </div>
-                                    <div class="col">
-                                        <div
-                                            *ngIf="registerForm.get('fname')?.invalid && (registerForm.get('fname')?.dirty || registerForm.get('fname')?.touched) && registerForm.get('fname')?.errors?.required">
-                                            *
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                        <tr>
-                            <td>Last Name:</td>
-                            <td>
-                                <div class="row">
-                                    <div class="col"><input type="text" id="lname" placeholder="Enter Last Name"
-                                            class="form-control" formControlName="lastname" style="width: 150px;"></div>
-                                    <div class="col">
-                                        <div
-                                            *ngIf="registerForm.get('lname')?.invalid && (registerForm.get('lname')?.dirty || registerForm.get('lname')?.touched) && registerForm.get('lname')?.errors?.required">
-                                            *
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Phone Number:</td>
-                            <td>
-                                <div class="row">
-                                    <div class="col"><input type="bigint" id="phone" placeholder="Phone Number"
-                                            class="form-control" formControlName="phone" style="width: 150px;"></div>
-                                    <div class="col">
-                                        <div
-                                            *ngIf="registerForm.get('phone')?.invalid && (registerForm.get('phone')?.dirty || registerForm.get('phone')?.touched) && registerForm.get('phone')?.errors?.required">
-                                            *
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Email ID(Username):</td>
-                            <td>
-                                <div class="row">
-                                    <div class="col"><input type="email" id="email" placeholder="Enter Email ID"
-                                            class="form-control" formControlName="email" style="width: 150px;"></div>
-                                    <div class="col">
-                                        <div
-                                            *ngIf="registerForm.get('email')?.invalid && (registerForm.get('email')?.dirty || registerForm.get('email')?.touched) && registerForm.get('email')?.errors?.required">
-                                            *
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Date of Birth:</td>
-                            <td>
-                                <div class="row">
-                                    <div class="col"><input type="date" id="dob" placeholder="Enter DOB"
-                                            class="form-control" formControlName="dob" style="width: 150px;"></div>
-                                    <div class="col">
-                                        <div
-                                            *ngIf="registerForm.get('dob')?.invalid && (registerForm.get('dob')?.dirty || registerForm.get('dob')?.touched) && registerForm.get('dob')?.errors?.required">
-                                            *
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr><tr>
-                        
-                            <td>
-                            Password:</td><div class="row">
-                             <div class="col">
-                            <input type="text" name="pwd" formControlName="pwd" placeholder="Create password" class="
-                            form-control" style="width: 150px;">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"
+                                    style="margin-bottom: 5px;margin-top: 10px;"></i></span>
                         </div>
-                        <div class="col">
-                            <div
-                                *ngIf="registerForm.get('pwd')?.invalid && (registerForm.get('pwd')?.dirty || registerForm.get('pwd')?.touched) && registerForm.get('pwd')?.errors?.required">
-                                *
+                        <input type="text" class="form-control" placeholder=" Enter your First Name"
+                            formControlName="firstname">
+                        <div style="color: red;"
+                            *ngIf="registerForm.get('firstname')?.invalid && (registerForm.get('firstname')?.dirty || registerForm.get('firstname')?.touched) && registerForm.get('firstname')?.errors?.required">
+                            Required
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"
+                                    style="margin-bottom: 5px;margin-top: 10px;"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder=" Enter your Last Name"
+                            formControlName="lastname">
+                        <div style="color: red;"
+                            *ngIf="registerForm.get('lastname')?.invalid && (registerForm.get('lastname')?.dirty || registerForm.get('lastname')?.touched) && registerForm.get('lastname')?.errors?.required">
+                            Required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"
+                                    style="margin-bottom: 5px;margin-top: 10px;"></i></span>
+                        </div>
+                        <input type="number" class="form-control" placeholder=" Enter your Phone Number"
+                            formControlName="phone">
+                        <div style="color: red;"
+                            *ngIf="registerForm.get('phone')?.invalid && (registerForm.get('phone')?.dirty || registerForm.get('phone')?.touched) && registerForm.get('phone')?.errors?.required">
+                            Required
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"
+                                    style="margin-bottom: 5px;margin-top: 10px;"></i></span>
+                        </div>
+                        <input type="email" class="form-control" placeholder=" Enter your Email ID"
+                            formControlName="email">
+                        <div style="color: red;"
+                            *ngIf="registerForm.get('email')?.invalid && (registerForm.get('email')?.dirty || registerForm.get('email')?.touched) && registerForm.get('email')?.errors?.required">
+                            Required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-birthday-cake"
+                                    style="margin-bottom: 5px;margin-top: 10px;"></i></span>
+                        </div>
+                        <input type="date" class="form-control" formControlName="dob">
+                        <div style="color: red;"
+                            *ngIf="registerForm.get('dob')?.invalid && (registerForm.get('dob')?.dirty || registerForm.get('dob')?.touched) && registerForm.get('dob')?.errors?.required">
+                            Required
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-key"
+                                    style="margin-bottom: 5px;margin-top: 10px;"></i></span>
+                        </div>
+                        <input type="password" class="form-control" formControlName="pwd"
+                            placeholder=" Create a password">
+                        <div style="color: red;"
+                            *ngIf="registerForm.get('pwd')?.invalid && (registerForm.get('pwd')?.dirty || registerForm.get('pwd')?.touched) && registerForm.get('pwd')?.errors?.required">
+                            Required
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-transgender"
+                                        style="margin-bottom: 5px;margin-top: 5px;"></i></span>
                             </div>
-                        </div>
-                        </div></tr>
-                        
-                        <tr>
-                            <td>Gender:</td>
-                            <td><input type="radio" value="male" name="gender"  formControlName="gender">Male <br>
-                                <input type="radio" value="female" name="gender" formControlName="gender">Female <br>
-                                <input type="radio" value="transgender" name="gender" formControlName="gender">Transgender </td>
-                                <td><div
-                                    *ngIf="registerForm.get('gender')?.invalid && (registerForm.get('gender')?.dirty || registerForm.get('gender')?.touched) && registerForm.get('gender')?.errors?.required">
-                                    *
-                                </div></td>
-                        </tr>
-                        
-                        <br>
-                        <tr>
-                            <td></td>
-                            
-                            <td>
-                                <button type="submit" class="btn btn-success" [disabled]="!registerForm.valid">Register</button>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            
-            
 
-        </table>
-    </form>
+                        </div>
+                    </div>
+                    <div class="col" style="margin-top: 10px;">
+                        <input type="radio" value="male" name="gender" formControlName="gender" style="margin-right: 10px;">Male
+                        <input type="radio" value="female" name="gender" formControlName="gender" style="margin-right: 10px;">Female
+                        <input type="radio" value="transgender" name="gender" formControlName="gender" style="margin-right: 10px;">Transgender
+                        <div style="color: red;"
+                            *ngIf="registerForm.get('gender')?.invalid && (registerForm.get('gender')?.dirty || registerForm.get('gender')?.touched) && registerForm.get('gender')?.errors?.required">
+                            Required
+                        </div>
+                       
+                    </div>
+
+                </div>
+                <div class="row"><div class="col" style="margin-left: 100px;">
+                    <button type="submit" class="btn btn-success" [disabled]="!registerForm.valid">Register</button></div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
 </div>
