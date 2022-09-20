@@ -1,12 +1,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="container position-absolute top-50 translate-middle start-50"
     style="background-color: rgb(253, 227, 195);width: fit-content;">
-   <div class="row" style="align-items:center">
+    <div class="row" style="align-items:center">
         <div style="text-align:center">
             <h1 style="font-size: solid large;">Register Page</h1>
         </div>
-        <div class="col" >
-            <img src="../assets/media/login1.png" alt="login image" >
+        <div class="col">
+            <img src="../assets/media/login1.png" alt="login image">
         </div>
         <div class="col">
             <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" novalidate>
@@ -18,10 +18,10 @@
                                     style="margin-bottom: 5px;margin-top: 10px;"></i></span>
                         </div>
                         <input type="text" class="form-control" placeholder=" Enter your First Name"
-                            formControlName="firstname">
-                        <div style="color: red;"
-                            *ngIf="registerForm.get('firstname')?.invalid && (registerForm.get('firstname')?.dirty || registerForm.get('firstname')?.touched) && registerForm.get('firstname')?.errors?.required">
-                            Required
+                            formControlName="firstname" [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }">
+                       
+                        <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+                            <div *ngIf="f.firstname.errors.required">firstname is required</div>
                         </div>
                     </div>
                 </div>
@@ -33,10 +33,10 @@
                                     style="margin-bottom: 5px;margin-top: 10px;"></i></span>
                         </div>
                         <input type="text" class="form-control" placeholder=" Enter your Last Name"
-                            formControlName="lastname">
-                        <div style="color: red;"
-                            *ngIf="registerForm.get('lastname')?.invalid && (registerForm.get('lastname')?.dirty || registerForm.get('lastname')?.touched) && registerForm.get('lastname')?.errors?.required">
-                            Required
+                            formControlName="lastname" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }">
+                       
+                        <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+                            <div *ngIf="f.lastname.errors.required">lastname is required</div>
                         </div>
                     </div>
                 </div>
@@ -49,10 +49,12 @@
                                     style="margin-bottom: 5px;margin-top: 10px;"></i></span>
                         </div>
                         <input type="number" class="form-control" placeholder=" Enter your Phone Number"
-                            formControlName="phone">
-                        <div style="color: red;"
-                            *ngIf="registerForm.get('phone')?.invalid && (registerForm.get('phone')?.dirty || registerForm.get('phone')?.touched) && registerForm.get('phone')?.errors?.required">
-                            Required
+                            formControlName="phone" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }"/>
+                       
+                        <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                            <div *ngIf="f.phone.errors.required">phone number is required</div>
+                            <div *ngIf="f.phone.errors.minlength">minimum length is 10</div>
+                            <div *ngIf="f.phone.errors.maxlength">maximum length is 10</div>
                         </div>
                     </div>
                 </div>
@@ -63,11 +65,12 @@
                             <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"
                                     style="margin-bottom: 5px;margin-top: 10px;"></i></span>
                         </div>
-                        <input type="email" class="form-control" placeholder=" Enter your Email ID"
-                            formControlName="email">
-                        <div style="color: red;"
-                            *ngIf="registerForm.get('email')?.invalid && (registerForm.get('email')?.dirty || registerForm.get('email')?.touched) && registerForm.get('email')?.errors?.required">
-                            Required
+                       
+                        <input type="text" formControlName="email" placeholder="Enter email ID" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                            <div *ngIf="f.email.errors.required">Email is required</div>
+                            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
                         </div>
                     </div>
                 </div>
@@ -79,10 +82,11 @@
                             <span class="input-group-text" id="basic-addon1"><i class="fa fa-birthday-cake"
                                     style="margin-bottom: 5px;margin-top: 10px;"></i></span>
                         </div>
-                        <input type="date" class="form-control" formControlName="dob">
-                        <div style="color: red;"
-                            *ngIf="registerForm.get('dob')?.invalid && (registerForm.get('dob')?.dirty || registerForm.get('dob')?.touched) && registerForm.get('dob')?.errors?.required">
-                            Required
+                        <input type="date" class="form-control" formControlName="dob"
+                            [ngClass]="{ 'is-invalid': submitted && f.dob.errors }">
+                        
+                        <div *ngIf="submitted && f.dob.errors" class="invalid-feedback">
+                            <div *ngIf="f.dob.errors.required">dob is required</div>
                         </div>
                     </div>
                 </div>
@@ -93,13 +97,16 @@
                             <span class="input-group-text" id="basic-addon1"><i class="fa fa-key"
                                     style="margin-bottom: 5px;margin-top: 10px;"></i></span>
                         </div>
-                        <input type="password" class="form-control" formControlName="pwd"
-                            placeholder=" Create a password">
-                        <div style="color: red;"
-                            *ngIf="registerForm.get('pwd')?.invalid && (registerForm.get('pwd')?.dirty || registerForm.get('pwd')?.touched) && registerForm.get('pwd')?.errors?.required">
-                            Required
+                        <input type="text" formControlName="pwd" placeholder="Create a password"
+                            class="form-control" [ngClass]="{ 'is-invalid': submitted && f.pwd.errors }" />
+                        <div *ngIf="submitted && f.pwd.errors" class="invalid-feedback">
+                            <div *ngIf="f.pwd.errors.required">Password is required</div>
+                            <!-- <div *ngIf="f.pwd.errors.minlength">Password must be at least 6 characters
+                            </div> -->
+                            <div class="error-text" *ngIf="f.pwd.hasError('passwordStrength')">
+                                {{registerForm.get('pwd').errors['passwordStrength']}}
+                            </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="row">
@@ -112,20 +119,26 @@
 
                         </div>
                     </div>
-                    <div class="col" style="margin-top: 10px;">
-                        <input type="radio" value="male" name="gender" formControlName="gender" style="margin-right: 10px;">Male
-                        <input type="radio" value="female" name="gender" formControlName="gender" style="margin-right: 10px;">Female
-                        <input type="radio" value="transgender" name="gender" formControlName="gender" style="margin-right: 10px;">Transgender
-                        <div style="color: red;"
-                            *ngIf="registerForm.get('gender')?.invalid && (registerForm.get('gender')?.dirty || registerForm.get('gender')?.touched) && registerForm.get('gender')?.errors?.required">
-                            Required
+                    <div class="col" style="margin-top: 10px;"  [ngClass]="{ 'is-invalid': submitted && f.gender.errors }" >
+                        <input type="radio" value="male" name="gender" formControlName="gender"
+                            style="margin-right: 10px;"   [ngClass]="{ 'is-invalid': submitted && f.gender.errors }">Male
+                        <input type="radio" value="female" name="gender" formControlName="gender"
+                            style="margin-right: 10px;"   [ngClass]="{ 'is-invalid': submitted && f.gender.errors }">Female
+                        <input type="radio" value="transgender" name="gender" formControlName="gender"
+                            style="margin-right: 10px;"   [ngClass]="{ 'is-invalid': submitted && f.gender.errors }">Transgender
+                        <div *ngIf="submitted && f.gender.errors" class="invalid-feedback">
+                            <div *ngIf="f.gender.errors.required">gender is required</div>
                         </div>
-                       
+
                     </div>
 
                 </div>
-                <div class="row"><div class="col" style="margin-left: 100px;">
-                    <button type="submit" class="btn btn-success" [disabled]="!registerForm.valid">Register</button></div>
+                <div class="row">
+                    <div class="col" style="margin-left: 70px;">
+                        <button type="submit" class="btn btn-success">Register</button>
+                        <button type="submit" class="btn btn-success" (click)="login()"
+                            style="margin-left: 30px;">Back</button>
+                    </div>
                 </div>
             </form>
         </div>

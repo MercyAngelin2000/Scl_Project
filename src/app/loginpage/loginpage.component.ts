@@ -30,17 +30,13 @@ export class LoginpageComponent implements OnInit {
 
   onSubmit(){
     console.log("Success",this.loginForm.value)
-    // if(!this.loginForm.valid){
-    //   alert("Username & Password is required")
-    //  }
     if(this.loginForm.valid ){
       this.credential = new FormData();
       this.credential.append("username",this.loginForm.get('email').value);
       this.credential.append("password",this.loginForm.get('pwd').value);
-      this.subService.login(this.credential).subscribe((arg: any) =>{
-        this.data= arg;    //arg is just a variable
-        console.log(this.data)
-        if(this.data.access_token != null){
+      this.subService.login(this.credential).subscribe(data =>{
+        this.data= data; 
+        // if(this.data.access_token != null){
           Swal.fire({
             position: 'center',
             icon: 'success',
@@ -52,17 +48,23 @@ export class LoginpageComponent implements OnInit {
           localStorage.setItem('token',this.data.access_token);
           localStorage.setItem('token_type',this.data.token_type);
           this.router.navigate(['/home'])
-        }else{
+        },err =>
+        // else
+        {
           Swal.fire({
             position: 'center',
             icon: 'error',
             title: 'Invalid Username or Password',
             showConfirmButton: false,
-            timer: 1500
+            timer: 1500,
           })
         }
-      })
+      );
+      
 
+    }
+    else{
+      alert("Credentials cannot be empty")
     }
     
     

@@ -27,6 +27,7 @@
                     *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched) && loginForm.get('email')?.errors?.required">
                     Required
                 </div>
+                
                 <div class="input-group mb-3 inner-addon right-addon">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1"><i class="fa fa-key"
@@ -36,9 +37,9 @@
                         placeholder="Password" formControlName="pwd">
                     <div style="margin-top: 10px;">
                         <i alt="show" class="far fa-eye eye-show" (click)="showPassword = !showPassword"
-                            [class.hide]="showPassword"></i>
-                        <i alt="hide" class="far fa-eye-slash eye-hide" (click)="showPassword = !showPassword"
                             [class.hide]="!showPassword"></i>
+                        <i alt="hide" class="far fa-eye-slash eye-hide" (click)="showPassword = !showPassword"
+                            [class.hide]="showPassword"></i>
                     </div>
                 </div>
                 <div style="color: red;"
@@ -48,8 +49,8 @@
 
 
 
-                <button type="submit" class="btn btn-success" [disabled]="!loginForm.valid"
-                    style="margin-right: 20px;margin-left:40px ">Login</button>
+                <button type="submit" class="btn btn-success"
+                    style="margin-right: 20px;margin-left:40px">Login</button>
                 <a href="/register" target="_self"><button type="button" class="btn btn-success">Register</button></a>
 
 

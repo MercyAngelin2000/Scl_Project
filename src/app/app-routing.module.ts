@@ -4,7 +4,6 @@ import { GeneralInfoComponent } from './general-info/general-info.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { RegisterpageComponent } from './registerpage/registerpage.component';
-import { SampleComponent } from './sample/sample.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
@@ -16,7 +15,6 @@ const routes: Routes = [
         {path:'userprofile',component:UserProfileComponent},
         {path:'sclprofile',component:GeneralInfoComponent},
       ]},
-      {path:'sample',component:SampleComponent}
   
 ];
 

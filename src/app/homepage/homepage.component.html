@@ -3,18 +3,21 @@
     <mat-toolbar-row>
       <div>
       <img style="margin-top: 3px;" src="../assets/media/home.png"
-                              alt="login image" width="100" height="100"></div>
+                              alt="login image" width="120" height="100"></div>
                        
    <button mat-icon-button>
-    <mat-icon (click)="drawer.toggle()" style="color: white">menu</mat-icon>
-  </button> </mat-toolbar-row>
+    <mat-icon (click)="drawer.toggle()" style="color: white;margin-left: 15px;">menu</mat-icon>
+  </button>
+ 
+  <img src="../assets/media/user.png" class="rounded-circle" alt="student image" width="40" height="40" style="margin-left: 1180px;">
+</mat-toolbar-row>
   </mat-toolbar>
   
    <mat-drawer-container class="example-container">
     <mat-drawer #drawer class="example-sidenav" mode="side" opened="True">
       <mat-nav-list>
-        <a mat-list-item href="home/userprofile" style="color: white;">User Profile</a>
-        <a mat-list-item href="home/sclprofile" style="color: white;">School Profile</a>
+        <a mat-list-item  href="home/userprofile" style="color: white;">User Profile</a>
+        <a mat-list-item  href="home/sclprofile" style="color: white;">School Profile</a>
         <button mat-list-item (click)="logout()" style="color: white;">Logout</button>
       </mat-nav-list>
     </mat-drawer>
