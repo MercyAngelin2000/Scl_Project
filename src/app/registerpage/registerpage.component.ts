@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { SubserviceService } from '../subservice.service';
 import { PasswordStrengthValidator } from "./password-strength"
@@ -20,7 +20,7 @@ export class RegisterpageComponent implements OnInit {
     this.registerForm = new FormGroup({
       firstname: new FormControl('', [Validators.required]),
       lastname: new FormControl('', [Validators.required]),
-      phone: new FormControl('', [Validators.required,Validators.minLength(10), Validators.maxLength(10),Validators.pattern('[0-9]')]),
+      phone: new FormControl('', [Validators.required,Validators.min(1000000000), Validators.max(9999999999)]),
       email: new FormControl('', [Validators.required,Validators.email,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
       dob: new FormControl('', [Validators.required]),
       gender: new FormControl('', [Validators.required]),

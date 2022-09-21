@@ -53,8 +53,8 @@
                        
                         <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
                             <div *ngIf="f.phone.errors.required">phone number is required</div>
-                            <div *ngIf="f.phone.errors.minlength">minimum length is 10</div>
-                            <div *ngIf="f.phone.errors.maxlength">maximum length is 10</div>
+                            <div *ngIf="f.phone.errors.min">minimum length is 10</div>
+                            <div *ngIf="f.phone.errors.max">maximum length is 10</div>
                         </div>
                     </div>
                 </div>
@@ -69,8 +69,10 @@
                         <input type="text" formControlName="email" placeholder="Enter email ID" class="form-control"
                             [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
                         <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                            <div *ngIf="f.email.errors.required">Email is required</div>
-                            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                            <div *ngIf="f.email.errors.required"> Email is required
+                            </div>
+                            <div *ngIf="f.email.errors.email"> Email must be a valid email address
+                            </div>
                         </div>
                     </div>
                 </div>

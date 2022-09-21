@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { SubserviceService } from '../subservice.service';
 import Swal from 'sweetalert2';
@@ -22,28 +22,18 @@ export class UserProfileComponent implements OnInit {
       this.router.navigate(['/']);
     }
     this.userprofile=this.fb.group({
-      firstname:[''],
-      lastname:[''],
-      phone:[''],
+      firstname:['',Validators.required],
+      lastname:['',Validators.required],
+      phone:['',[Validators.required,Validators.min(1000000000), Validators.max(9999999999)]],
       email:[''],
-      dob:[''],
-      gender:['']
+      dob:['',Validators.required],
+      gender:['',Validators.required]
     })
     this.subservice.userprofile().subscribe((arg: any) =>{
       this.data=arg;
       console.log(this.data);
-      this.loaddata();
-    })
-  }
-
-  loaddata(){
-    this.userprofile=this.fb.group({
-      firstname:[this.data.firstname],
-      lastname:[this.data.lastname],
-      phone:[this.data.phone],
-      email:[this.data.email],
-      dob:[this.data.dob],
-      gender:[this.data.gender]
+      if(this.data!=null)
+      this.userprofile.patchValue(this.data)
     })
   }
 

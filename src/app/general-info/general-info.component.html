@@ -10,7 +10,7 @@
             <form [formGroup]="generalForm">
                 <div *ngIf="steps==1">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="row">
                                 <label>Name of the Institution</label>
                             </div>
@@ -18,7 +18,7 @@
                                 <div class="input-group">
                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
                                         <i class="fa fa-university" aria-hidden="true"
-                                            style="margin-left: 13px; margin-top: 10px;"></i>
+                                            style="margin-left: 13px; margin-top: 10px; "></i>
                                     </div>
                                     <input type="text" name="institute_name" class="form-control"
                                         formControlName="inst_name">
@@ -32,7 +32,7 @@
                             </div>
 
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="row">
                                 <label>Postal Address</label>
                             </div>
@@ -42,8 +42,7 @@
                                         <i class="fa fa-map-marker" aria-hidden="true"
                                             style="margin-left: 13px; margin-top: 10px; "></i>
                                     </div>
-                                    <input type="text" name="postal" class="form-control" formControlName="postal"
-                                        style="width: 280px;">
+                                    <input type="text" name="postal" class="form-control" formControlName="postal">
                                     <div style="color: red;"
                                         *ngIf="generalForm.get('postal')?.invalid && (generalForm.get('postal')?.dirty || generalForm.get('postal')?.touched) && generalForm.get('postal')?.errors?.required">
                                         required
@@ -52,7 +51,7 @@
 
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="row">
                                 <label>District</label>
                             </div>
@@ -62,8 +61,7 @@
                                         <i class="fa fa-map-marker" aria-hidden="true"
                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                     </div>
-                                    <input type="text" name="district" class="form-control" formControlName="dis"
-                                        style="width: 280px;">
+                                    <input type="text" name="district" class="form-control" formControlName="dis">
                                     <div style="color: red;"
                                         *ngIf="generalForm.get('dis')?.invalid && (generalForm.get('dis')?.dirty || generalForm.get('dis')?.touched) && generalForm.get('dis')?.errors?.required">
                                         required
