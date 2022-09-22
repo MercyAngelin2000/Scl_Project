@@ -1,5 +1,5 @@
 .card{
-    height: 380px;
+    height: 330px;
     width:700px;
     font-family: "Times New Roman", Times, serif;
     font-size: smaller;
@@ -9,6 +9,14 @@ label{
     margin-top: 10px;
     margin-bottom: 2px;
     font-family: "Times New Roman", Times, serif;
-    font-size:bold medium;
+    font-size:small;
 
+}
+h2{
+    font-family: "Times New Roman", Times, serif;
+    font-size: medium;
+}
+input,div,button{
+    font-family: "Times New Roman", Times, serif;
+    font-size: small;
 }
