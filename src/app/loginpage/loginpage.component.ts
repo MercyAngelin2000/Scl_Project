@@ -12,7 +12,7 @@ import { SubserviceService } from '../subservice.service';
 export class LoginpageComponent implements OnInit {
   loginForm: FormGroup | any;
   public showPassword!: boolean 
-  public showPasswordOnPress!: boolean;
+  // public showPasswordOnPress!: boolean;
   data: any;
   id: any;
   credential! : FormData ;

@@ -3,7 +3,7 @@ i{
 }
 label{
     color: black;
-    font-size:medium;
+    font-size:small;
 }
 h6{
     color: black;
@@ -22,6 +22,19 @@ th{
 .card{
     // height:30%;
     width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: smaller;
+}
+input{
+    font-size: small;
+}
+div{
+    font-size: small;
+}
+select{
+    font-size: small;
+}
+button{
     font-family: "Times New Roman", Times, serif;
     font-size: smaller;
 }

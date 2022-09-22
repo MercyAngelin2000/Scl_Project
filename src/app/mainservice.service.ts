@@ -24,6 +24,8 @@ export class MainserviceService {
   }
 
   up_userprofile(url:any,data:any){
+    console.log(this.base+url,data);
+    
     return this.http.put(this.base+url,data,{headers:new HttpHeaders({"Authorization":localStorage.getItem('token_type')+" "+localStorage.getItem('token')})});
   }
 
