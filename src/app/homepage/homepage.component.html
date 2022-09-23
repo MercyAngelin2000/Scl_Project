@@ -16,9 +16,10 @@
    <mat-drawer-container class="example-container">
     <mat-drawer #drawer class="example-sidenav" mode="side" opened="True">
       <mat-nav-list>
-        <a mat-list-item  href="home/userprofile" style="color: white;">User Profile</a>
-        <a mat-list-item  href="home/sclprofile" style="color: white;">School Profile</a>
-        <button mat-list-item (click)="logout()" style="color: white;">Logout</button>
+        
+        <button mat-list-item (click)="userprofile()" style="color: white;"><i class="fa fa-user-circle-o" aria-hidden="true" style="color: #0fed25;margin-left: 8px; margin-right: 5px;"></i>User Profile</button>
+        <button mat-list-item (click)="school_profile()" style="color: white;"><i class="fa fa-university" aria-hidden="true" style="color: #ed1e0f;margin-left: 8px; margin-right: 5px;"></i>School Profile</button>
+        <button mat-list-item (click)="logout()" style="color: white;"><i class="fa fa-sign-out" aria-hidden="true" style="color: #ed0faa;margin-left: 8px; margin-right: 5px;"></i>Logout</button>
       </mat-nav-list>
     </mat-drawer>
   

@@ -3460,17 +3460,37 @@
                                             <label>Principal/Head Master</label>
                                         </div>
                                         <div class="col-md-1">
+                                            <div class="input-group">
                                             <input type="number" formControlName="prin_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                        *ngIf="generalForm.get('prin_per_male')?.invalid && (generalForm.get('prin_per_male')?.dirty || generalForm.get('prin_per_male')?.touched) && generalForm.get('prin_per_male')?.errors?.required">
+                                                        *
+                                                    </div></div>
 
                                         </div>
                                         <div class="col-md-2">
+                                            <div class="input-group">
                                             <input type="number" formControlName="prin_per_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('prin_per_female')?.invalid && (generalForm.get('prin_per_female')?.dirty || generalForm.get('prin_per_female')?.touched) && generalForm.get('prin_per_female')?.errors?.required">
+                                            *
+                                        </div></div>
                                         </div>
                                         <div class="col-md-1">
+                                            <div class="input-group">
                                             <input type="number" formControlName="prin_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('prin_tem_male')?.invalid && (generalForm.get('prin_tem_male')?.dirty || generalForm.get('prin_tem_male')?.touched) && generalForm.get('prin_tem_male')?.errors?.required">
+                                            *
+                                        </div></div>
                                         </div>
                                         <div class="col-md-2">
+                                            <div class="input-group">
                                             <input type="number" formControlName="prin_tem_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('prin_tem_female')?.invalid && (generalForm.get('prin_tem_female')?.dirty || generalForm.get('prin_tem_female')?.touched) && generalForm.get('prin_tem_female')?.errors?.required">
+                                            *
+                                        </div></div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number"
@@ -3489,18 +3509,31 @@
                                         <div class="col-md-3">
                                             <label>Vice Principal/Asst HM</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="vp_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('vp_per_male')?.invalid && (generalForm.get('vp_per_male')?.dirty || generalForm.get('vp_per_male')?.touched) && generalForm.get('vp_per_male')?.errors?.required">
+                                            *
+                                        </div></div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="vp_per_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('vp_per_female')?.invalid && (generalForm.get('vp_per_female')?.dirty || generalForm.get('vp_per_female')?.touched) && generalForm.get('vp_per_female')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="vp_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('vp_tem_male')?.invalid && (generalForm.get('vp_tem_male')?.dirty || generalForm.get('vp_tem_male')?.touched) && generalForm.get('vp_tem_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="vp_tem_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('vp_tem_female')?.invalid && (generalForm.get('vp_tem_female')?.dirty || generalForm.get('vp_tem_female')?.touched) && generalForm.get('vp_tem_female')?.errors?.required"> * </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3518,18 +3551,31 @@
                                         <div class="col-md-3">
                                             <label>PGTs (Post Graduate Teachers)</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="pgt_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('pgt_per_male')?.invalid && (generalForm.get('pgt_per_male')?.dirty || generalForm.get('pgt_per_male')?.touched) && generalForm.get('pgt_per_male')?.errors?.required"> * </div>
+                                        </div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="pgt_per_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('pgt_per_female')?.invalid && (generalForm.get('pgt_per_female')?.dirty || generalForm.get('pgt_per_female')?.touched) && generalForm.get('pgt_per_female')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="pgt_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('pgt_tem_male')?.invalid && (generalForm.get('pgt_tem_male')?.dirty || generalForm.get('pgt_tem_male')?.touched) && generalForm.get('pgt_tem_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="pgt_tem_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('pgt_tem_female')?.invalid && (generalForm.get('pgt_tem_female')?.dirty || generalForm.get('pgt_tem_female')?.touched) && generalForm.get('pgt_tem_female')?.errors?.required"> * </div>
+                                        
+                                        </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3547,18 +3593,30 @@
                                         <div class="col-md-3">
                                             <label>TGTs (Trained Graduate Teachers)</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="tgt_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('tgt_per_male')?.invalid && (generalForm.get('tgt_per_male')?.dirty || generalForm.get('tgt_per_male')?.touched) && generalForm.get('tgt_per_male')?.errors?.required"> * </div>
+                                        </div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="tgt_per_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('tgt_per_female')?.invalid && (generalForm.get('tgt_per_female')?.dirty || generalForm.get('tgt_per_female')?.touched) && generalForm.get('tgt_per_female')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="tgt_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('tgt_tem_male')?.invalid && (generalForm.get('tgt_tem_male')?.dirty || generalForm.get('tgt_tem_male')?.touched) && generalForm.get('tgt_tem_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="tgt_tem_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('tgt_tem_female')?.invalid && (generalForm.get('tgt_tem_female')?.dirty || generalForm.get('tgt_tem_female')?.touched) && generalForm.get('tgt_tem_female')?.errors?.required"> * </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3576,18 +3634,30 @@
                                         <div class="col-md-3">
                                             <label>PRTs (Primary Teachers)</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="prt_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('prt_per_male')?.invalid && (generalForm.get('prt_per_male')?.dirty || generalForm.get('prt_per_male')?.touched) && generalForm.get('prt_per_male')?.errors?.required"> * </div>
+                                        </div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="prt_per_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('prt_per_female')?.invalid && (generalForm.get('prt_per_female')?.dirty || generalForm.get('prt_per_female')?.touched) && generalForm.get('prt_per_female')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="prt_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('prt_tem_male')?.invalid && (generalForm.get('prt_tem_male')?.dirty || generalForm.get('prt_tem_male')?.touched) && generalForm.get('prt_tem_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="prt_tem_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('prt_tem_female')?.invalid && (generalForm.get('prt_tem_female')?.dirty || generalForm.get('prt_tem_female')?.touched) && generalForm.get('prt_tem_female')?.errors?.required"> * </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3605,18 +3675,29 @@
                                         <div class="col-md-3">
                                             <label>NTTs (Nursery Trained Teachers)</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="ntt_per_male" class="form-control">
-
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('ntt_per_male')?.invalid && (generalForm.get('ntt_per_male')?.dirty || generalForm.get('ntt_per_male')?.touched) && generalForm.get('ntt_per_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="ntt_per_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('ntt_per_female')?.invalid && (generalForm.get('ntt_per_female')?.dirty || generalForm.get('ntt_per_female')?.touched) && generalForm.get('ntt_per_female')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="ntt_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('ntt_tem_male')?.invalid && (generalForm.get('ntt_tem_male')?.dirty || generalForm.get('ntt_tem_male')?.touched) && generalForm.get('ntt_tem_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="ntt_tem_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('ntt_tem_female')?.invalid && (generalForm.get('ntt_tem_female')?.dirty || generalForm.get('ntt_tem_female')?.touched) && generalForm.get('ntt_tem_female')?.errors?.required"> * </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3634,22 +3715,34 @@
                                         <div class="col-md-3">
                                             <label>Untrained Teachers</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="untrained_per_male"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('untrained_per_male')?.invalid && (generalForm.get('untrained_per_male')?.dirty || generalForm.get('untrained_per_male')?.touched) && generalForm.get('untrained_per_male')?.errors?.required"> * </div>
+                                            </div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="untrained_per_female"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('untrained_per_female')?.invalid && (generalForm.get('untrained_per_female')?.dirty || generalForm.get('untrained_per_female')?.touched) && generalForm.get('untrained_per_female')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="untrained_tem_male"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('untrained_tem_male')?.invalid && (generalForm.get('untrained_tem_male')?.dirty || generalForm.get('untrained_tem_male')?.touched) && generalForm.get('untrained_tem_male')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="untrained_tem_female"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('untrained_tem_male')?.invalid && (generalForm.get('untrained_tem_male')?.dirty || generalForm.get('untrained_tem_male')?.touched) && generalForm.get('untrained_tem_male')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3667,18 +3760,30 @@
                                         <div class="col-md-3">
                                             <label>Librarian</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="lib_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('lib_per_male')?.invalid && (generalForm.get('lib_per_male')?.dirty || generalForm.get('lib_per_male')?.touched) && generalForm.get('lib_per_male')?.errors?.required"> * </div>
+                                        </div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="lib_per_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('lib_per_female')?.invalid && (generalForm.get('lib_per_female')?.dirty || generalForm.get('lib_per_female')?.touched) && generalForm.get('lib_per_female')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="lib_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('lib_tem_male')?.invalid && (generalForm.get('lib_tem_male')?.dirty || generalForm.get('lib_tem_male')?.touched) && generalForm.get('lib_tem_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="lib_tem_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('lib_tem_female')?.invalid && (generalForm.get('lib_tem_female')?.dirty || generalForm.get('lib_tem_female')?.touched) && generalForm.get('lib_tem_female')?.errors?.required"> * </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3696,18 +3801,30 @@
                                         <div class="col-md-3">
                                             <label>Arts/Dance/Music Teachers</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="art_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('art_per_male')?.invalid && (generalForm.get('art_per_male')?.dirty || generalForm.get('art_per_male')?.touched) && generalForm.get('art_per_male')?.errors?.required"> * </div>
+                                        </div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="art_per_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('art_per_female')?.invalid && (generalForm.get('art_per_female')?.dirty || generalForm.get('art_per_female')?.touched) && generalForm.get('art_per_female')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="art_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('art_tem_male')?.invalid && (generalForm.get('art_tem_male')?.dirty || generalForm.get('art_tem_male')?.touched) && generalForm.get('art_tem_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="art_tem_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('art_tem_female')?.invalid && (generalForm.get('art_tem_female')?.dirty || generalForm.get('art_tem_female')?.touched) && generalForm.get('art_tem_female')?.errors?.required"> * </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3725,22 +3842,33 @@
                                         <div class="col-md-3">
                                             <label>Counsellors</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="counsellor_per_male"
                                                 class="form-control">
-
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('counsellor_per_male')?.invalid && (generalForm.get('counsellor_per_male')?.dirty || generalForm.get('counsellor_per_male')?.touched) && generalForm.get('counsellor_per_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="counsellor_per_female"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('counsellor_per_female')?.invalid && (generalForm.get('counsellor_per_female')?.dirty || generalForm.get('counsellor_per_female')?.touched) && generalForm.get('counsellor_per_female')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="counsellor_tem_male"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('counsellor_tem_male')?.invalid && (generalForm.get('counsellor_tem_male')?.dirty || generalForm.get('counsellor_tem_male')?.touched) && generalForm.get('counsellor_tem_male')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="counsellor_tem_female"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('counsellor_tem_female')?.invalid && (generalForm.get('counsellor_tem_female')?.dirty || generalForm.get('counsellor_tem_female')?.touched) && generalForm.get('counsellor_tem_female')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3758,18 +3886,30 @@
                                         <div class="col-md-3">
                                             <label>Computer Literacy</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="lit_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('lit_per_male')?.invalid && (generalForm.get('lit_per_male')?.dirty || generalForm.get('lit_per_male')?.touched) && generalForm.get('lit_per_male')?.errors?.required"> * </div>
+                                            </div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="lit_per_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('lit_per_female')?.invalid && (generalForm.get('lit_per_female')?.dirty || generalForm.get('lit_per_female')?.touched) && generalForm.get('lit_per_female')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="lit_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('lit_tem_male')?.invalid && (generalForm.get('lit_tem_male')?.dirty || generalForm.get('lit_tem_male')?.touched) && generalForm.get('lit_tem_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="lit_tem_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('lit_tem_female')?.invalid && (generalForm.get('lit_tem_female')?.dirty || generalForm.get('lit_tem_female')?.touched) && generalForm.get('lit_tem_female')?.errors?.required"> * </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3787,20 +3927,32 @@
                                         <div class="col-md-3">
                                             <label>Faith Ministers</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="faith_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('faith_per_male')?.invalid && (generalForm.get('faith_per_male')?.dirty || generalForm.get('faith_per_male')?.touched) && generalForm.get('faith_per_male')?.errors?.required"> * </div>
+                                        </div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="faith_per_female"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('faith_per_female')?.invalid && (generalForm.get('faith_per_female')?.dirty || generalForm.get('faith_per_female')?.touched) && generalForm.get('faith_per_female')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="faith_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('faith_tem_male')?.invalid && (generalForm.get('faith_tem_male')?.dirty || generalForm.get('faith_tem_male')?.touched) && generalForm.get('faith_tem_male')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="faith_tem_female"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('faith_tem_female')?.invalid && (generalForm.get('faith_tem_female')?.dirty || generalForm.get('faith_tem_female')?.touched) && generalForm.get('faith_tem_female')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3818,20 +3970,32 @@
                                         <div class="col-md-3">
                                             <label>Nurse</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="nurse_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('nurse_per_male')?.invalid && (generalForm.get('nurse_per_male')?.dirty || generalForm.get('nurse_per_male')?.touched) && generalForm.get('nurse_per_male')?.errors?.required"> * </div>
+                                            </div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="nurse_per_female"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('nurse_per_female')?.invalid && (generalForm.get('nurse_per_female')?.dirty || generalForm.get('nurse_per_female')?.touched) && generalForm.get('nurse_per_female')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="nurse_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('nurse_tem_male')?.invalid && (generalForm.get('nurse_tem_male')?.dirty || generalForm.get('nurse_tem_male')?.touched) && generalForm.get('nurse_tem_male')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="nurse_tem_female"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                                *ngIf="generalForm.get('nurse_tem_female')?.invalid && (generalForm.get('nurse_tem_female')?.dirty || generalForm.get('nurse_tem_female')?.touched) && generalForm.get('nurse_tem_female')?.errors?.required"> * </div>
+                                            </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3849,18 +4013,30 @@
                                         <div class="col-md-3">
                                             <label>P.T Teachers</label>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="pt_per_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('pt_per_male')?.invalid && (generalForm.get('pt_per_male')?.dirty || generalForm.get('pt_per_male')?.touched) && generalForm.get('pt_per_male')?.errors?.required"> * </div>
+                                        </div>
 
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="pt_per_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('pt_per_female')?.invalid && (generalForm.get('pt_per_female')?.dirty || generalForm.get('pt_per_female')?.touched) && generalForm.get('pt_per_female')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-1">
+                                        </div>
+                                        <div class="col-md-1"><div class="input-group">
                                             <input type="number" formControlName="pt_tem_male" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('pt_tem_male')?.invalid && (generalForm.get('pt_tem_male')?.dirty || generalForm.get('pt_tem_male')?.touched) && generalForm.get('pt_tem_male')?.errors?.required"> * </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="pt_tem_female" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('pt_tem_female')?.invalid && (generalForm.get('pt_tem_female')?.dirty || generalForm.get('pt_tem_female')?.touched) && generalForm.get('pt_tem_female')?.errors?.required"> * </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-1">
                                             <input type="number" class="form-control"
@@ -3939,33 +4115,33 @@
 
                                 </div>
                                 <div *ngIf="steps==14">
-                                    <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
-                                        <div>
-                                            <h6 style="text-align: center;">Administration Support Staff</h6>
+                                    <div class="row">
+                                        <div style="text-align: center;margin-bottom: 2px;">
+                                            <b>Administration Support Staff</b>
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>Support Staff </h6>
+                                                <b>Support Staff </b>
                                             </label>
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                <h6> Permanent</h6>
+                                                <b> Permanent</b>
                                             </label>
                                         </div>
                                         <div class="col-md-3">
                                             <label>
-                                                <h6>Temporary</h6>
+                                                <b>Temporary</b>
                                             </label>
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>Part-Time</h6>
+                                                <b>Part-Time</b>
                                             </label>
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>Total</h6>
+                                                <b>Total</b>
                                             </label>
                                         </div>
                                     </div>
@@ -3974,16 +4150,24 @@
                                         <div class="col-md-2">
                                             <label>Office Managers</label>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="off_manager_per" class="form-control">
-
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('off_manager_per')?.invalid && (generalForm.get('off_manager_per')?.dirty || generalForm.get('off_manager_per')?.touched) && generalForm.get('off_manager_per')?.errors?.required">  required </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="off_manager_tem" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('off_manager_tem')?.invalid && (generalForm.get('off_manager_tem')?.dirty || generalForm.get('off_manager_tem')?.touched) && generalForm.get('off_manager_tem')?.errors?.required">  required</div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="off_manager_part"
                                                 class="form-control">
+                                                <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('off_manager_part')?.invalid && (generalForm.get('off_manager_part')?.dirty || generalForm.get('off_manager_part')?.touched) && generalForm.get('off_manager_part')?.errors?.required">  required </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-2">
                                             <input type="number" class="form-control"
@@ -3996,15 +4180,24 @@
                                         <div class="col-md-2">
                                             <label>Office Assistant</label>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="off_asst_per" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('off_asst_per')?.invalid && (generalForm.get('off_asst_per')?.dirty || generalForm.get('off_asst_per')?.touched) && generalForm.get('off_asst_per')?.errors?.required">  required </div>
+                                        </div>
 
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="off_asst_tem" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('off_asst_tem')?.invalid && (generalForm.get('off_asst_tem')?.dirty || generalForm.get('off_asst_tem')?.touched) && generalForm.get('off_asst_tem')?.errors?.required">  required </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="off_asst_part" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('off_asst_part')?.invalid && (generalForm.get('off_asst_part')?.dirty || generalForm.get('off_asst_part')?.touched) && generalForm.get('off_asst_part')?.errors?.required">  required </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-2">
                                             <input type="number" class="form-control"
@@ -4017,15 +4210,24 @@
                                         <div class="col-md-2">
                                             <label>Clerks</label>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="clerk_per" class="form-control">
-
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('clerk_per')?.invalid && (generalForm.get('clerk_per')?.dirty || generalForm.get('clerk_per')?.touched) && generalForm.get('clerk_per')?.errors?.required">  required </div>
+                                       
                                         </div>
-                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="clerk_tem" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('clerk_tem')?.invalid && (generalForm.get('clerk_tem')?.dirty || generalForm.get('clerk_tem')?.touched) && generalForm.get('clerk_tem')?.errors?.required">  required </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="clerk_part" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('clerk_part')?.invalid && (generalForm.get('clerk_part')?.dirty || generalForm.get('clerk_part')?.touched) && generalForm.get('clerk_part')?.errors?.required">  required </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-2">
                                             <input type="number" class="form-control"
@@ -4038,15 +4240,24 @@
                                         <div class="col-md-2">
                                             <label>Lab Attendants</label>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="lab_per" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('lab_per')?.invalid && (generalForm.get('lab_per')?.dirty || generalForm.get('lab_per')?.touched) && generalForm.get('lab_per')?.errors?.required">  required</div>
+                                        </div>
 
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="lab_tem" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('lab_tem')?.invalid && (generalForm.get('lab_tem')?.dirty || generalForm.get('lab_tem')?.touched) && generalForm.get('lab_tem')?.errors?.required">  required</div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="lab_part" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('lab_part')?.invalid && (generalForm.get('lab_part')?.dirty || generalForm.get('lab_part')?.touched) && generalForm.get('lab_part')?.errors?.required">  required</div>
+                                        </div>
                                         </div>
                                         <div class="col-md-2">
                                             <input type="number" class="form-control"
@@ -4059,15 +4270,23 @@
                                         <div class="col-md-2">
                                             <label>Accountant</label>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="accountant_per" class="form-control">
-
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('accountant_per')?.invalid && (generalForm.get('accountant_per')?.dirty || generalForm.get('accountant_per')?.touched) && generalForm.get('accountant_per')?.errors?.required">  required </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="accountant_tem" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('accountant_tem')?.invalid && (generalForm.get('accountant_tem')?.dirty || generalForm.get('accountant_tem')?.touched) && generalForm.get('accountant_tem')?.errors?.required">  required </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="accountant_part" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('accountant_part')?.invalid && (generalForm.get('accountant_part')?.dirty || generalForm.get('accountant_part')?.touched) && generalForm.get('accountant_part')?.errors?.required">  required </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-2">
                                             <input type="number" class="form-control"
@@ -4080,15 +4299,23 @@
                                         <div class="col-md-2">
                                             <label>Peons/Clerks</label>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="peon_per" class="form-control">
-
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('peon_per')?.invalid && (generalForm.get('peon_per')?.dirty || generalForm.get('peon_per')?.touched) && generalForm.get('peon_per')?.errors?.required">  required</div>
                                         </div>
-                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="peon_tem" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('peon_tem')?.invalid && (generalForm.get('peon_tem')?.dirty || generalForm.get('peon_tem')?.touched) && generalForm.get('peon_tem')?.errors?.required">  required</div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="peon_part" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('peon_part')?.invalid && (generalForm.get('peon_part')?.dirty || generalForm.get('peon_part')?.touched) && generalForm.get('peon_part')?.errors?.required">  required</div>
+                                        </div>
                                         </div>
                                         <div class="col-md-2">
                                             <input type="number" class="form-control"
@@ -4101,15 +4328,23 @@
                                         <div class="col-md-2">
                                             <label>Others</label>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="other_per" class="form-control">
-
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('other_per')?.invalid && (generalForm.get('other_per')?.dirty || generalForm.get('other_per')?.touched) && generalForm.get('other_per')?.errors?.required">  required </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-3"><div class="input-group">
                                             <input type="number" formControlName="other_tem" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('other_tem')?.invalid && (generalForm.get('other_tem')?.dirty || generalForm.get('other_tem')?.touched) && generalForm.get('other_tem')?.errors?.required">  required </div>
                                         </div>
-                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-2"><div class="input-group">
                                             <input type="number" formControlName="other_part" class="form-control">
+                                            <div style="color: red; margin-top: 8px; margin-left: 2px;"
+                                            *ngIf="generalForm.get('other_part')?.invalid && (generalForm.get('other_part')?.dirty || generalForm.get('other_part')?.touched) && generalForm.get('other_part')?.errors?.required">  required </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-2">
                                             <input type="number" class="form-control"
@@ -4118,13 +4353,11 @@
                                         </div>
 
                                     </div>
-
-
                                 </div>
                                 <div *ngIf="steps==15">
-                                    <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
-                                        <div>
-                                            <h6 style="text-align: center;">Curricular Activities</h6>
+                                    <div class="row">
+                                        <div style="text-align: center;">
+                                            <b>Curricular Activities</b>
                                         </div>
 
                                     </div>
@@ -4137,11 +4370,11 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="no_curri_act"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter no of carricular activities carried out">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('no_curri_act')?.invalid && (generalForm.get('no_curri_act')?.dirty || generalForm.get('no_curri_act')?.touched) && generalForm.get('no_curri_act')?.errors?.required">
@@ -4158,10 +4391,10 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="no_grp" class="form-control">
+                                                    <input type="number" formControlName="no_grp" class="form-control" placeholder="enter no of Groups/Clubs/Associations/Movements present">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('no_grp')?.invalid && (generalForm.get('no_grp')?.dirty || generalForm.get('no_grp')?.touched) && generalForm.get('no_grp')?.errors?.required">
@@ -4178,10 +4411,10 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="no_community"
+                                                    <input type="number" formControlName="no_community" placeholder="enter no of Community Services done in the last AcademicYear"
                                                         class="form-control">
 
                                                     <div style="color: red;"
@@ -4193,34 +4426,34 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
-                                        <div>
-                                            <h6 style="text-align: center;">No. of Sports Events Participated in the
+                                    <div class="row">
+                                        <div style="text-align: center;">
+                                            <b >No. of Sports Events Participated in the
                                                 Last Year
-                                            </h6>
+                                            </b>
                                         </div>
 
                                     </div>
                                     <div class="row">
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>School</h6>
+                                                School
                                             </label>
 
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6> Zonal</h6>
+                                                Zonal
                                             </label>
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>District</h6>
+                                                District
                                             </label>
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>State</h6>
+                                               State
                                             </label>
                                         </div>
                                         <div class="col-md-2">
@@ -4228,7 +4461,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>International</h6>
+                                              International
                                             </label>
                                         </div>
 
@@ -4236,10 +4469,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="scl" class="form-control">
+                                                    <input type="number" formControlName="scl" class="form-control" placeholder="enter no of sports event at school level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('scl')?.invalid && (generalForm.get('scl')?.dirty || generalForm.get('scl')?.touched) && generalForm.get('scl')?.errors?.required">
@@ -4251,10 +4484,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="zonal" class="form-control">
+                                                    <input type="number" formControlName="zonal" class="form-control" placeholder="enter no of sports event at zonal level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('zonal')?.invalid && (generalForm.get('zonal')?.dirty || generalForm.get('zonal')?.touched) && generalForm.get('zonal')?.errors?.required">
@@ -4265,10 +4498,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="dist" class="form-control">
+                                                    <input type="number" formControlName="dist" class="form-control" placeholder="enter no of sports event at district level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('dist')?.invalid && (generalForm.get('dist')?.dirty || generalForm.get('dist')?.touched) && generalForm.get('dist')?.errors?.required">
@@ -4279,10 +4512,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="stat" class="form-control">
+                                                    <input type="number" formControlName="stat" class="form-control" placeholder="enter no of sports event at state level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('stat')?.invalid && (generalForm.get('stat')?.dirty || generalForm.get('stat')?.touched) && generalForm.get('stat')?.errors?.required">
@@ -4293,11 +4526,11 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="national"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter no of sports event at national level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('national')?.invalid && (generalForm.get('national')?.dirty || generalForm.get('national')?.touched) && generalForm.get('national')?.errors?.required">
@@ -4308,11 +4541,11 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="international"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter no of sports event at international level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('international')?.invalid && (generalForm.get('international')?.dirty || generalForm.get('international')?.touched) && generalForm.get('international')?.errors?.required">
@@ -4325,33 +4558,33 @@
 
                                     </div>
 
-                                    <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
-                                        <div>
-                                            <h6 style="text-align: center;">No. of Competitions Participated in the Last
-                                                Year </h6>
+                                    <div class="row">
+                                        <div style="text-align: center;">
+                                            <b >No. of Competitions Participated in the Last
+                                                Year </b>
                                         </div>
 
                                     </div>
                                     <div class="row">
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>School</h6>
+                                                School
                                             </label>
 
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6> Zonal</h6>
+                                              Zonal
                                             </label>
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>District</h6>
+                                                District
                                             </label>
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>State</h6>
+                                               State
                                             </label>
                                         </div>
                                         <div class="col-md-2">
@@ -4359,7 +4592,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>International</h6>
+                                                International
                                             </label>
                                         </div>
 
@@ -4367,10 +4600,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="c_scl" class="form-control">
+                                                    <input type="number" formControlName="c_scl" class="form-control" placeholder="enter no of competition at school level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('c_scl')?.invalid && (generalForm.get('c_scl')?.dirty || generalForm.get('c_scl')?.touched) && generalForm.get('c_scl')?.errors?.required">
@@ -4382,10 +4615,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="c_zonal" class="form-control">
+                                                    <input type="number" formControlName="c_zonal" class="form-control" placeholder="enter no of competition at zonal level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('c_zonal')?.invalid && (generalForm.get('c_zonal')?.dirty || generalForm.get('c_zonal')?.touched) && generalForm.get('c_zonal')?.errors?.required">
@@ -4396,10 +4629,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="c_dist" class="form-control">
+                                                    <input type="number" formControlName="c_dist" class="form-control" placeholder="enter no of competition at district level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('c_dist')?.invalid && (generalForm.get('c_dist')?.dirty || generalForm.get('c_dist')?.touched) && generalForm.get('c_dist')?.errors?.required">
@@ -4410,10 +4643,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="c_stat" class="form-control">
+                                                    <input type="number" formControlName="c_stat" class="form-control" placeholder="enter no of competition at state level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('c_stat')?.invalid && (generalForm.get('c_stat')?.dirty || generalForm.get('c_stat')?.touched) && generalForm.get('c_stat')?.errors?.required">
@@ -4424,11 +4657,11 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="c_national"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter no of competition at national level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('c_national')?.invalid && (generalForm.get('c_national')?.dirty || generalForm.get('c_national')?.touched) && generalForm.get('c_national')?.errors?.required">
@@ -4439,11 +4672,11 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="c_international"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter no of competition at internationallevel">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('c_international')?.invalid && (generalForm.get('c_international')?.dirty || generalForm.get('c_international')?.touched) && generalForm.get('c_international')?.errors?.required">
@@ -4455,34 +4688,34 @@
 
 
                                     </div>
-                                    <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
-                                        <div>
-                                            <h6 style="text-align: center;">No.of Inter School Programmes Organized in
+                                    <div class="row">
+                                        <div style="text-align: center;">
+                                            <b >No.of Inter School Programmes Organized in
                                                 the Last Year
-                                            </h6>
+                                            </b>
                                         </div>
 
                                     </div>
                                     <div class="row">
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>School</h6>
+                                                School
                                             </label>
 
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6> Zonal</h6>
+                                              Zonal
                                             </label>
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>District</h6>
+                                                District
                                             </label>
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>State</h6>
+                                               State
                                             </label>
                                         </div>
                                         <div class="col-md-2">
@@ -4490,7 +4723,7 @@
                                         </div>
                                         <div class="col-md-2">
                                             <label>
-                                                <h6>International</h6>
+                                                International
                                             </label>
                                         </div>
 
@@ -4498,11 +4731,11 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="inter_scl"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter no of inter school program at school level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('inter_scl')?.invalid && (generalForm.get('inter_scl')?.dirty || generalForm.get('inter_scl')?.touched) && generalForm.get('inter_scl')?.errors?.required">
@@ -4514,10 +4747,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="inter_zonal"
+                                                    <input type="number" formControlName="inter_zonal" placeholder="enter no of inter school program at zonal level"
                                                         class="form-control">
 
                                                     <div style="color: red;"
@@ -4529,11 +4762,11 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="inter_dist"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter no of inter school program at district level">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('inter_dist')?.invalid && (generalForm.get('inter_dist')?.dirty || generalForm.get('inter_dist')?.touched) && generalForm.get('inter_dist')?.errors?.required">
@@ -4544,10 +4777,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="inter_stat"
+                                                    <input type="number" formControlName="inter_stat" placeholder="enter no of inter school program at state level"
                                                         class="form-control">
 
                                                     <div style="color: red;"
@@ -4559,10 +4792,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="inter_national"
+                                                    <input type="number" formControlName="inter_national" placeholder="enter no of inter school program at national level"
                                                         class="form-control">
 
                                                     <div style="color: red;"
@@ -4574,10 +4807,10 @@
                                             <div class="col-md-2">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
-                                                    <input type="number" formControlName="inter_international"
+                                                    <input type="number" formControlName="inter_international" placeholder="enter no of inter school program at international level"
                                                         class="form-control">
 
                                                     <div style="color: red;"
@@ -4603,12 +4836,12 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-calendar" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <select class="form-control form-select"
                                                         formControlName="ac_begin_mon">
-                                                        <option disabled>--Select Month--</option>
+                                                        <option value="" disabled selected>--Select Month--</option>
                                                         <option selected value='1'>Janaury</option>
                                                         <option value='2'>February</option>
                                                         <option value='3'>March</option>
@@ -4638,12 +4871,12 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-calendar" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <select class="form-control form-select"
                                                         formControlName="ac_end_mon">
-                                                        <option disabled>--Select Month--</option>
+                                                        <option value="" selected disabled>--Select Month--</option>
                                                         <option selected value='1'>Janaury</option>
                                                         <option value='2'>February</option>
                                                         <option value='3'>March</option>
@@ -4668,26 +4901,26 @@
                                         </div>
                                         <div class="col"></div>
                                     </div>
-                                    <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
-                                        <div>
-                                            <h6 style="text-align: center;">Number of Working Days During the Last Three
-                                                Years</h6>
+                                    <div class="row">
+                                        <div style="text-align: center;">
+                                            <b >Number of Working Days During the Last Three
+                                                Years</b>
                                         </div>
 
                                     </div>
-                                    <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+                                    <div class="row" >
                                         <div class="col"></div>
                                         <div class="col">
-                                            <h6>2021-2022</h6>
+                                            <b>2021-2022</b>
                                         </div>
                                         <div class="col">
-                                            <h6>2020-2021</h6>
+                                            <b>2020-2021</b>
                                         </div>
                                         <div class="col">
-                                            <h6>2019-2020</h6>
+                                            <b>2019-2020</b>
                                         </div>
                                     </div>
-                                    <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+                                    <div class="row">
                                         <div class="col">
                                             <label>No. of working days</label>
                                         </div>
@@ -4695,7 +4928,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="working_day_21"
@@ -4713,7 +4946,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="working_day_20"
@@ -4731,7 +4964,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="working_day_19"
@@ -4754,7 +4987,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="hrs_21" class="form-control">
@@ -4771,7 +5004,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="hrs_20" class="form-control">
@@ -4788,7 +5021,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="hrs_19" class="form-control">
@@ -4810,7 +5043,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="instruct_hrs_21"
@@ -4828,7 +5061,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="instruct_hrs_20"
@@ -4846,7 +5079,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="instruct_hrs_19"
@@ -4869,7 +5102,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="non_instruct_hrs_21"
@@ -4887,7 +5120,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="non_instruct_hrs_20"
@@ -4905,7 +5138,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="non_instruct_hrs_19"
@@ -4928,7 +5161,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="holiday_21"
@@ -4946,7 +5179,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="holiday_20"
@@ -4964,7 +5197,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="holiday_19"
@@ -4992,11 +5225,11 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="sub_teaching_week"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter no of Subject teaching periods per week "> 
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('sub_teaching_week')?.invalid && (generalForm.get('sub_teaching_week')?.dirty || generalForm.get('sub_teaching_week')?.touched) && generalForm.get('sub_teaching_week')?.errors?.required">
@@ -5013,11 +5246,11 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="moral_week"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter no of Periods for Faith/Moral Science teaching in a week ">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('moral_week')?.invalid && (generalForm.get('moral_week')?.dirty || generalForm.get('moral_week')?.touched) && generalForm.get('moral_week')?.errors?.required">
@@ -5037,11 +5270,11 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-hourglass-half" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="teaching_duration"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter Duration of a teaching period">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('teaching_duration')?.invalid && (generalForm.get('teaching_duration')?.dirty || generalForm.get('teaching_duration')?.touched) && generalForm.get('teaching_duration')?.errors?.required">
@@ -5059,11 +5292,11 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-sort-numeric-asc" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="number" formControlName="hrs_club"
-                                                        class="form-control">
+                                                        class="form-control" placeholder="enter no of hours for activities in the Clubs/Groups/Associations/Movements">
 
                                                     <div style="color: red;"
                                                         *ngIf="generalForm.get('hrs_club')?.invalid && (generalForm.get('hrs_club')?.dirty || generalForm.get('hrs_club')?.touched) && generalForm.get('hrs_club')?.errors?.required">
@@ -5083,7 +5316,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-clock-o" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="time" formControlName="scl_tim_sum_from"
@@ -5104,7 +5337,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-clock-o" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="time" formControlName="scl_tim_sum_to"
@@ -5125,7 +5358,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-clock-o" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="time" formControlName="scl_tim_win_from"
@@ -5146,7 +5379,7 @@
                                             <div class="row">
                                                 <div class="input-group">
                                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
-                                                        <i class="fa fa-list-ul" aria-hidden="true"
+                                                        <i class="fa fa-clock-o" aria-hidden="true"
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <input type="time" formControlName="scl_tim_win_to"
@@ -5173,7 +5406,7 @@
                                                             style="margin-left: 13px; margin-top: 10px;"></i>
                                                     </div>
                                                     <select class="form-control form-select" formControlName="shift">
-                                                        <option disabled>--Select One--</option>
+                                                        <option value="" selected disabled>--Select One--</option>
                                                         <option selected value='yes'>Yes</option>
                                                         <option value='no'>No</option>
                                                     </select>

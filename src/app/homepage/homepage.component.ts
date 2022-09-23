@@ -18,6 +18,12 @@ export class HomepageComponent implements OnInit {
       this.router.navigate(['/']);
     }
   }
+  userprofile(){
+    this.router.navigate(['home/userprofile'])
+  }
+  school_profile(){
+    this.router.navigate(['home/sclprofile'])
+  }
   logout(){
     Swal.fire({
       title: 'Are you sure?',

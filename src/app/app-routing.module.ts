@@ -7,14 +7,21 @@ import { RegisterpageComponent } from './registerpage/registerpage.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
-  {path:"",component:LoginpageComponent,pathMatch:"full"},
-  {path:'register',component:RegisterpageComponent},
+  {
+    path:"",
+    component:LoginpageComponent,
+    pathMatch:"full"
+  },
+  {
+    path:'register',component:RegisterpageComponent
+  },
   
   {path:'home',component:HomepageComponent,
       children:[
         {path:'userprofile',component:UserProfileComponent},
         {path:'sclprofile',component:GeneralInfoComponent},
       ]},
+ 
   
 ];
 

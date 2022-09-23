@@ -16,11 +16,13 @@ export class LoginpageComponent implements OnInit {
   data: any;
   id: any;
   credential! : FormData ;
+  
+  
   constructor(private router:Router,private subService:SubserviceService,private fb:FormBuilder) { 
   
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {   
     this.loginForm =this.fb.group({
       email:['',Validators.required],
       pwd:['',Validators.required]
