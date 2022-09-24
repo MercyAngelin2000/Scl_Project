@@ -16,8 +16,9 @@
 
   .mat-drawer{
     background-color: rgb(1, 1, 26);
-    width: 175px;
-    height: 100%;
+    // width: 175px;
+    height: auto;
+    width: auto;
   }
   .mat-toolbar{
     background-color: rgb(233, 166, 42);
@@ -28,6 +29,9 @@
   button{
     font-family: "Times New Roman", Times, serif;
     font-size:small;
+}
+mat-toolbar-row{
+  width: auto;
 }
   
 

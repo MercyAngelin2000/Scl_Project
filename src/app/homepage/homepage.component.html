@@ -3,13 +3,13 @@
     <mat-toolbar-row>
       <div>
       <img style="margin-top: 3px;" src="../assets/media/home.png"
-                              alt="login image" width="120" height="100"></div>
+                              alt="login image" width="110" height="100"></div>
                        
    <button mat-icon-button>
-    <mat-icon (click)="drawer.toggle()" style="color: white;margin-left: 15px;">menu</mat-icon>
+    <mat-icon (click)="drawer.toggle()" style="color: white;">menu</mat-icon>
   </button>
  
-  <img src="../assets/media/user.png" class="rounded-circle" alt="student image" width="40" height="40" style="margin-left: 1180px;">
+  <!-- <img src="../assets/media/user.png" class="rounded-circle" alt="student image" width="40" height="40" style="margin-left: 1180px;"> -->
 </mat-toolbar-row>
   </mat-toolbar>
   
@@ -17,9 +17,9 @@
     <mat-drawer #drawer class="example-sidenav" mode="side" opened="True">
       <mat-nav-list>
         
-        <button mat-list-item (click)="userprofile()" style="color: white;"><i class="fa fa-user-circle-o" aria-hidden="true" style="color: #0fed25;margin-left: 8px; margin-right: 5px;"></i>User Profile</button>
-        <button mat-list-item (click)="school_profile()" style="color: white;"><i class="fa fa-university" aria-hidden="true" style="color: #ed1e0f;margin-left: 8px; margin-right: 5px;"></i>School Profile</button>
-        <button mat-list-item (click)="logout()" style="color: white;"><i class="fa fa-sign-out" aria-hidden="true" style="color: #ed0faa;margin-left: 8px; margin-right: 5px;"></i>Logout</button>
+        <button mat-list-item (click)="userprofile()" style="color: white;"><i class="fa fa-user-circle-o" aria-hidden="true" style="color: #0fed25;"></i>User Profile</button>
+        <button mat-list-item (click)="school_profile()" style="color: white;"><i class="fa fa-university" aria-hidden="true" style="color: #ed1e0f;"></i>School Profile</button>
+        <button mat-list-item (click)="logout()" style="color: white;"><i class="fa fa-sign-out" aria-hidden="true" style="color: #ed0faa;"></i>Logout</button>
       </mat-nav-list>
     </mat-drawer>
   
