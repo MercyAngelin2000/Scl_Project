@@ -1,0 +1,52 @@
+<div class="container">
+    <form  [formGroup]="sampleform" (ngSubmit)="submit()">
+
+ 
+    <div class="row">
+        
+        <div class="col">
+            <div class="col">
+                <label>State</label>
+            </div>
+            <div class="input-group">
+                <div style="width: 40px;background-color: hwb(0 88% 9%);">
+                    <i class="fa fa-map-marker" aria-hidden="true"
+                        style="margin-left: 13px; margin-top: 10px; "></i>
+                </div>
+                <select id="country-state" name="country-state" class="form-control form-select"
+                    formControlName="state">
+                    <option value="" disabled selected>--Select State--</option>
+                    <option *ngFor="let data of state"> {{data}} </option>
+                   
+            </select>
+                <div style="color: red;"
+                    *ngIf="sampleform.get('state')?.invalid && (sampleform.get('state')?.dirty || sampleform.get('state')?.touched) && sampleform.get('state')?.errors?.['required']">
+                    required
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="row">
+                <label>City</label>
+            </div>
+        <div class="input-group">
+            <div style="width: 40px;background-color: hwb(0 88% 9%);">
+                <i class="fa fa-map-marker" aria-hidden="true"
+                    style="margin-left: 13px; margin-top: 10px; "></i>
+            </div>
+            <select id="city" name="city" class="form-control form-select"
+                formControlName="city">
+                <option value="" disabled selected>--Select City/Town/Village--</option>
+                
+            </select>
+            <div style="color: red;"
+                *ngIf="sampleform.get('city')?.invalid && (sampleform.get('city')?.dirty || sampleform.get('city')?.touched) && sampleform.get('city')?.errors?.['required']">
+                required
+            </div>
+        </div>
+    </div>
+
+    </div>
+</form>
+</div>
