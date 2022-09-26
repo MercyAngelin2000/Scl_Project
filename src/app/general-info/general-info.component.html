@@ -533,8 +533,8 @@
                                         *ngIf="generalForm.get('off_email')?.invalid && (generalForm.get('off_email')?.dirty || generalForm.get('off_email')?.touched) && generalForm.get('off_email')?.errors?.required">
                                         required
                                     </div>
-                                    <div style="color: red;" *ngIf="generalForm.get('off_email')?.errors.email">invalid
-                                    </div>
+                                    <!-- <div style="color: red;" *ngIf="generalForm.get('off_email')?.errors.['email']">invalid
+                                    </div> -->
                                 </div>
 
                             </div>
@@ -882,8 +882,8 @@
                                                         *ngIf="generalForm.get('cors_email')?.invalid && (generalForm.get('cors_email')?.dirty || generalForm.get('cors_email')?.touched) && generalForm.get('cors_email')?.errors?.required">
                                                         required
                                                     </div>
-                                                    <div style="color: red;" *ngIf="generalForm.get('cors_email')?.errors.email">invalid
-                                                    </div>
+                                                    <!-- <div style="color: red;" *ngIf="generalForm.get('cors_email')?.errors.email">invalid
+                                                    </div> -->
                                                 </div>
 
                                             </div>
@@ -953,7 +953,7 @@
                                                         *ngIf="generalForm.get('prin_email')?.invalid && (generalForm.get('prin_email')?.dirty || generalForm.get('prin_email')?.touched) && generalForm.get('prin_email')?.errors?.required">
                                                         required
                                                     </div>
-                                                    <div style="color: red;" *ngIf="generalForm.get('prin_email')?.errors.email">invalid </div>
+                                                    <!-- <div style="color: red;" *ngIf="generalForm.get('prin_email')?.errors.email">invalid </div> -->
                                                 </div>
 
                                             </div>
@@ -1570,7 +1570,7 @@
                                                         *ngIf="generalForm.get('president_email')?.invalid && (generalForm.get('president_email')?.dirty || generalForm.get('president_email')?.touched) && generalForm.get('president_email')?.errors?.required">
                                                         required
                                                     </div>
-                                                    <div style="color: red;" *ngIf="generalForm.get('president_email')?.errors.email">invalid </div>
+                                                    <!-- <div style="color: red;" *ngIf="generalForm.get('president_email')?.errors.email">invalid </div> -->
                                                 </div>
 
                                             </div>
