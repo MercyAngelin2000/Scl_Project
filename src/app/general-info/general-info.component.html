@@ -1,12 +1,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div class="container" style="margin-top:30px;">
+<div class="container" style="margin-top:10px;">
+    <!-- <div class="row justify-content-center"> -->
+    <!-- <div class="col d-flex justify-content-center"> -->
+
     <div class="card">
         <div class="card-header" style="background-color: rgb(6, 6, 105); color: aliceblue;">
             <div>
                 {{steps}} {{msg}}
             </div>
         </div>
-        <div class="card-body" style="font-size: 18px;">
+        <div class="card-body">
             <form [formGroup]="generalForm">
                 <div *ngIf="steps==1">
                     <div class="row">
@@ -74,12 +77,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="row">
                                 <label>State</label>
                             </div>
                             <div class="row">
-                                <div class="input-group">
+                                <div class="col-md-12 input-group">
                                     <div style="width: 40px;background-color: hwb(0 88% 9%);">
                                         <i class="fa fa-map-marker" aria-hidden="true"
                                             style="margin-left: 13px; margin-top: 10px; "></i>
@@ -97,7 +100,7 @@
 
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="row">
                                 <label>City/Town/Village</label>
                             </div>
@@ -469,7 +472,7 @@
 
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="row">
                                 <label>Pincode</label>
                             </div>
@@ -494,7 +497,7 @@
 
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="row">
                                 <label>URL Name</label>
                             </div>
@@ -514,7 +517,7 @@
 
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="row">
                                 <label>Official Email Id</label>
                             </div>
@@ -536,7 +539,7 @@
 
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="row">
                                 <label>Official Phone Number</label>
                             </div>
@@ -560,7 +563,7 @@
 
                     </div>
                     <div class=" row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>School Location</label>
                                             </div>
@@ -585,7 +588,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Year of Establishment</label>
                                             </div>
@@ -604,7 +607,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Medium</label>
                                             </div>
@@ -636,7 +639,7 @@
                                 </div>
                                 <div *ngIf="steps==2">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Nature of Affiliation</label>
                                             </div>
@@ -662,7 +665,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>School Level</label>
                                             </div>
@@ -692,7 +695,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Gender</label>
                                             </div>
@@ -718,7 +721,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Current No.of girls(total)</label>
                                             </div>
@@ -737,7 +740,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Current No.of boys(total)</label>
                                             </div>
@@ -756,7 +759,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Current No.of Students(total)</label>
                                             </div>
@@ -779,7 +782,7 @@
 
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Total No.of Teaching Staff</label>
                                             </div>
@@ -799,7 +802,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Total No.of Non Teaching Staff</label>
                                             </div>
@@ -819,7 +822,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Name of the Correspondent</label>
                                             </div>
@@ -841,7 +844,7 @@
 
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Correspondent Mobile Number</label>
                                             </div>
@@ -863,7 +866,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Correspondent Email Id</label>
                                             </div>
@@ -891,7 +894,7 @@
                                 </div>
                                 <div *ngIf="steps==3">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Name of the Principal/Headmaster</label>
                                             </div>
@@ -912,7 +915,7 @@
 
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Principal/Headmaster Office Phone Number</label>
                                             </div>
@@ -934,7 +937,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Principal/Headmaster Email Id</label>
                                             </div>
@@ -959,7 +962,7 @@
 
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Principal/Headmaster Mobile Number</label>
                                             </div>
@@ -981,15 +984,15 @@
 
                                             </div>
                                         </div>
-                                        <div class="col"></div>
-                                        <div class="col"></div>
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4"></div>
 
                                     </div>
 
                                 </div>
                                 <div *ngIf="steps==4">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Is the institute duly recognized by the Govt?</label>
                                             </div>
@@ -1013,7 +1016,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Name of the Board Affiliated with</label>
                                             </div>
@@ -1043,7 +1046,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Affiliation No</label>
                                             </div>
@@ -1064,7 +1067,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Year of Affiliation</label>
                                             </div>
@@ -1085,7 +1088,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Is the affiliation permanent or temporary?</label>
                                             </div>
@@ -1108,7 +1111,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>State the conditions for affiliation?</label>
                                             </div>
@@ -1129,7 +1132,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Have you obtained minority status certificate?</label>
                                             </div>
@@ -1154,8 +1157,8 @@
                                             </div>
 
                                         </div>
-                                        <div class="col"></div>
-                                        <div class="col"></div>
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4"></div>
                                     </div>
                                     <div class="row">
                                         <div class="div" style="text-align: center;">
@@ -1309,7 +1312,7 @@
                                 </div>
                                 <div *ngIf="steps==5">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>School owned by</label>
                                             </div>
@@ -1336,7 +1339,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Name of the Trust/Society/Company</label>
                                             </div>
@@ -1356,7 +1359,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Is the Trust/ Society/ Company registered?</label>
                                             </div>
@@ -1382,7 +1385,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>If yes, under which Act?</label>
                                             </div>
@@ -1403,7 +1406,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Year of registeration</label>
                                             </div>
@@ -1423,7 +1426,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Registeration No</label>
                                             </div>
@@ -1445,7 +1448,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Period of Validity of Registration</label>
                                             </div>
@@ -1465,7 +1468,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Name(President/Chairman/ Managing Trustee)</label>
                                             </div>
@@ -1485,7 +1488,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Designation(President/Chairman/ Managing Trustee)</label>
                                             </div>
@@ -1509,7 +1512,7 @@
 
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Address(President/Chairman/ Managing Trustee)</label>
                                             </div>
@@ -1529,7 +1532,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Phone Number(President/Chairman/ Managing Trustee)</label>
                                             </div>
@@ -1551,7 +1554,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Email address(President/Chairman/ Managing Trustee)</label>
                                             </div>
@@ -1581,7 +1584,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Governing Body of the Trust/Society/Company</label>
                                             </div>
@@ -1605,7 +1608,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>How many members in it?</label>
                                             </div>
@@ -1624,7 +1627,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Tenure of each Member</label>
                                             </div>
@@ -1652,7 +1655,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Educative Community Council (EPCC)</label>
                                             </div>
@@ -1675,7 +1678,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>How many members in it?</label>
                                             </div>
@@ -1694,7 +1697,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Tenure of each Member</label>
                                             </div>
@@ -1722,7 +1725,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Parent – Teacher Association Executive Body?</label>
                                             </div>
@@ -1746,7 +1749,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>How many members in it?</label>
                                             </div>
@@ -1766,7 +1769,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Tenure of each Member</label>
                                             </div>
@@ -1796,7 +1799,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-md-3">
                                                 <div class="row">
                                                     <label>Student Association/Councill</label>
                                                 </div>
@@ -1819,7 +1822,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3">
                                                 <div class="row">
                                                     <label>How many members in it?</label>
                                                 </div>
@@ -1839,7 +1842,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3">
                                                 <div class="row">
                                                     <label>Tenure of each Member</label>
                                                 </div>
@@ -1859,7 +1862,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-md-3">
                                                 <div class="row">
                                                     <label>General Grievance / Complaint Cell?</label>
                                                 </div>
@@ -1889,7 +1892,7 @@
                                                 <b>School Management Committee</b>
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>School Management Committee?</label>
                                             </div>
@@ -1913,7 +1916,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Constitution of Management Committee</label>
                                             </div>
@@ -1942,7 +1945,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>How many members in it?</label>
                                             </div>
@@ -1962,7 +1965,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Tenure of each Member</label>
                                             </div>
@@ -1986,7 +1989,7 @@
                                 </div>
                                 <div *ngIf="steps==8">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Is the school located in a rented or own building?</label>
                                             </div>
@@ -2011,7 +2014,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Area of school Campus (in sq. mtrs.)</label>
                                             </div>
@@ -2031,7 +2034,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Built Up Area(in sq. mtrs.)</label>
                                             </div>
@@ -2052,7 +2055,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Playground Area (in sq. mtrs)</label>
                                             </div>
@@ -2072,7 +2075,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Number of Buildings / Floors</label>
                                             </div>
@@ -2092,7 +2095,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Provisions for differently available</label>
                                             </div>
@@ -2118,7 +2121,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Number of staircases</label>
                                             </div>
@@ -2139,7 +2142,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>No. of Lifts</label>
                                             </div>
@@ -2158,14 +2161,14 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
 
                                         </div>
                                     </div>
                                 </div>
                                 <div *ngIf="steps==9">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Class Rooms</label>
                                             </div>
@@ -2186,7 +2189,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Staff Rooms</label>
                                             </div>
@@ -2206,7 +2209,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Physics Lab</label>
                                             </div>
@@ -2228,7 +2231,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Chemistry Lab</label>
                                             </div>
@@ -2249,7 +2252,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Biology Lab</label>
                                             </div>
@@ -2269,7 +2272,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Mathematics Lab</label>
                                             </div>
@@ -2291,7 +2294,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Computer Science Lab</label>
                                             </div>
@@ -2312,7 +2315,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Language Lab</label>
                                             </div>
@@ -2331,7 +2334,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Home Science Lab</label>
                                             </div>
@@ -2352,7 +2355,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Library</label>
                                             </div>
@@ -2372,7 +2375,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Auditorium</label>
                                             </div>
@@ -2392,7 +2395,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Counselors Room</label>
                                             </div>
@@ -2414,7 +2417,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Visitors Parlor (space)</label>
                                             </div>
@@ -2435,7 +2438,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Prayer Room / Chapel</label>
                                             </div>
@@ -2455,7 +2458,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Infirmary / Sick Room</label>
                                             </div>
@@ -2477,7 +2480,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Canteen</label>
                                             </div>
@@ -2497,7 +2500,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Security Room</label>
                                             </div>
@@ -2517,7 +2520,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Other Rooms / Halls</label>
                                             </div>
@@ -2539,7 +2542,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Staff – Urinals / Toilets</label>
                                             </div>
@@ -2560,7 +2563,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Student Urinals / Toilets</label>
                                             </div>
@@ -2580,7 +2583,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Rooms</label>
                                             </div>
@@ -2601,7 +2604,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Does your school admit children with special needs?</label>
                                             </div>
@@ -2619,7 +2622,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Does the school have teachers with competencies to handle
                                                     students with special
@@ -2645,7 +2648,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col"></div>
+                                        <div class="col-md-4"></div>
                                     </div>
                                 </div>
                                 <div *ngIf="steps==10">
@@ -2653,7 +2656,7 @@
                                         <b>Safety and Security</b>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Boundary Wall?</label>
                                             </div>
@@ -2678,7 +2681,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>If Yes, Boundary Wall?</label>
                                             </div>
@@ -2702,7 +2705,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>CCTV Cameras installed?</label>
                                             </div>
@@ -2725,7 +2728,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Data saved?</label>
                                             </div>
@@ -2751,7 +2754,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>How many cameras?</label>
                                             </div>
@@ -2772,7 +2775,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Male Security Guard?</label>
                                             </div>
@@ -2796,7 +2799,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>How many Male Security Guards?</label>
                                             </div>
@@ -2816,7 +2819,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Female Security Guard?</label>
                                             </div>
@@ -2842,7 +2845,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>How many Female Security Guards?</label>
                                             </div>
@@ -2864,7 +2867,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Drinking water facilities?</label>
                                             </div>
@@ -2888,7 +2891,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Proper drainage facilities?</label>
                                             </div>
@@ -2912,7 +2915,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
 
                                         </div>
                                     </div>
@@ -2922,7 +2925,7 @@
                                         <b>Other Benefits for the Students</b>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Midday Meals Scheme?</label>
                                             </div>
@@ -2946,7 +2949,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>No. of buses owned by school</label>
                                             </div>
@@ -2966,7 +2969,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>GPS enabled camera</label>
                                             </div>
@@ -2987,7 +2990,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>No. of Lady Attendantor(if needed)</label>
                                             </div>
@@ -3011,7 +3014,7 @@
                                     </div>
                                     <div class="row">
 
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>First Aid kit</label>
                                             </div>
@@ -3032,7 +3035,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Drinking Water</label>
                                             </div>
@@ -3053,7 +3056,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>No. of buses sub-contracted</label>
                                             </div>
@@ -3074,7 +3077,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Eligibility for Govt free bus pass?</label>
                                             </div>
@@ -3100,7 +3103,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Free transport Service offered by the School?</label>
                                             </div>
@@ -3125,13 +3128,13 @@
                                             </div>
 
                                         </div>
-                                        <div class="col"></div>
-                                        <div class="col"></div>
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4"></div>
                                     </div>
                                 </div>
                                 <div *ngIf="steps==12">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Library Open Time</label>
                                             </div>
@@ -3152,7 +3155,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Library Close Time</label>
                                             </div>
@@ -3172,7 +3175,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Total no. of Library Books</label>
                                             </div>
@@ -3192,7 +3195,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Total no. of Library Magazines</label>
                                             </div>
@@ -3215,7 +3218,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Total no. of Library Dailies (newspapers)</label>
                                             </div>
@@ -3237,7 +3240,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Total no. of eBooks</label>
                                             </div>
@@ -3258,7 +3261,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Online access to library and resources?</label>
                                             </div>
@@ -3282,7 +3285,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-3">
                                             <div class="row">
                                                 <label>Separate Library for Primary Section?</label>
                                             </div>
@@ -3307,7 +3310,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Is there provision for remedial teaching?</label>
                                             </div>
@@ -3331,11 +3334,11 @@
 
                                             </div>
                                         </div>
-                                        <div class="col"></div>
-                                        <div class="col"></div>
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4"></div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>Multi-Media facilities available in the school</label>
                                             </div>
@@ -3368,8 +3371,8 @@
 
                                             </div>
                                         </div>
-                                        <div class="col"></div>
-                                        <div class="col"></div>
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4"></div>
 
                                     </div>
                                 </div>
@@ -4327,7 +4330,7 @@
                                     </div>
                                     <div class="row">
 
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>No. of curricular activities carried out</label>
                                             </div>
@@ -4348,7 +4351,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>No. of Groups/Clubs/Associations/Movements present</label>
                                             </div>
@@ -4368,7 +4371,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-md-4">
                                             <div class="row">
                                                 <label>No.of Community Services done in the last AcademicYear</label>
                                             </div>
@@ -5596,9 +5599,12 @@
             <button type="" (click)="onPrevious()" class="btn btn-primary" *ngIf="steps!=1"
                 style="margin-right: 20px; background-color: rgb(3, 185, 236);"><i class="fa fa-arrow-left" aria-hidden="true" style="color: white;"></i>Privious</button>
             <button type="" (click)="onNext()" class="btn btn-primary" style=" background-color: rgb(3, 185, 236);"
-                *ngIf="steps!=18">Next<i class="fa fa-arrow-right" aria-hidden="true" style="color: white;"></i></button>
+                *ngIf="steps!=17">Next<i class="fa fa-arrow-right" aria-hidden="true" style="color: white;"></i></button>
             <button type="submit" [disabled]="!generalForm.valid" class="btn btn-success" (click)="onSubmit()"
-                *ngIf="steps==18">Save</button>
+                *ngIf="steps==17">Save</button>
         </div>
     </div>
+    <!-- </div> -->
+<!-- </div> -->
+
 </div>

@@ -19,6 +19,7 @@ export class HomepageComponent implements OnInit {
     }
   }
   userprofile(){
+    
     this.router.navigate(['home/userprofile'])
   }
   school_profile(){

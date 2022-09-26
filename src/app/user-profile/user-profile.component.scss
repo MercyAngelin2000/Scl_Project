@@ -1,10 +1,7 @@
 .card{
-    height: 330px;
-    width:700px;
     font-family: "Times New Roman", Times, serif;
     font-size: smaller;
     display: flex;
-
 }
 label{
     margin-top: 10px;
@@ -13,11 +10,14 @@ label{
     font-size:small;
 
 }
-h2{
+h4{
     font-family: "Times New Roman", Times, serif;
     font-size: medium;
 }
 input,div,button{
     font-family: "Times New Roman", Times, serif;
     font-size: small;
+}
+button{
+    margin-left: 10px;
 }
